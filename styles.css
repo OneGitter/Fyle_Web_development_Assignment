@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    text-align: center;
+    text-shadow: 13px 6px 12px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+}
+
+.userDetailsSection{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    height: 600px;
+    gap: 12px;
+}
+
+button{
+    padding: 4px 10px;
+    border-radius: 4px !important;
+    background-color: #3498db;
+    border:none;
+    color: #fff;
+
+}
+
+label{
+    display: inline-block;
+}
+
+input, button {
+    margin-bottom: 10px;
+}
+
+.loader {
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+    display: none;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.repositories {
+    margin-top: 20px;
+}
+
+.repository {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+    box-shadow: 5px 5px #000;
+    transition: all 0.3s ease-in-out;
+}
+
+.repository:hover{
+    transform: translateY(-4px);
+}
+
+.page-navigation .gitNav-link {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+
+  .page-navigation{
+    display: inline-block;
+  }
+  
+  .page-navigation  .gitNav-link.active {
+    background-color: #22abe2;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  .page-navigation .gitNav-link:hover:not(.active) {
+    background-color: #ddd;
+    border-radius: 5px;
+  }
+
+
+.avatarImage{
+    border-radius: 50%;
+    width: 200px;
+    /* margin: 0 auto; */
+}
+
+/* user profile css*/
+
+.userProfileWrapper{
+    display: grid;
+    grid-template-columns: 35% 65%;
+    width: 800px;
+    gap: 10px;
+    margin: 0px auto;
+    border: 1px solid #ccc;
+    padding: 19px 20px;
+    border-radius: 10px;
+}
+.userProfileWrapper .userAvatarimg img{
+    width: 30%;
+}
+
+#userProfile > p{
+    margin:4px 0px;
+}
+
+.userAvatarImg {
+    margin: 0 auto;
+}
+
+.paginationWrapper{
+    margin:0 auto;
+    text-align:center;
+}
+
+.gitcardHeader{
+    color:#686868;
+}
+
+.gitProjectDes{
+    color:#686868;
+    font-size: 12px;
+    font-weight: 600;
+    
+}
+
+.projectLang{
+    display: inline-block;
+    border:1px solid #22abe2;
+    background-color: #22abe2;
+    color:#fff;
+    margin:0 4px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.userDetailsSection2{
+    display: flex;
+    /* flex-direction: column; */
+    align-items: flex-start;
+    gap:10px;
+    width: 66%;
+    margin: 10px auto;
+}
+
+@media screen and (max-width:789px){
+    .userProfileWrapper{
+        grid-template-columns: 100%;
+       
+    }
+}
